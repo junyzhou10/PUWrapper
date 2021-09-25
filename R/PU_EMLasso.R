@@ -13,10 +13,10 @@
 #' @examples
 #' set.seed(123)
 #' res = PU_EMLasso(sample_dat$Z, sample_dat$X, sample_dat$PI, alpha = 1)
-#' plot(res$Est.Pr, sample_dat$true.prob)
+#' # plot(res$Est.Pr, sample_dat$true.prob)
 #' @import glmnet utils
 #' @importFrom stats coef
-#'
+#' @export
 
 
 PU_EMLasso <- function(Z, X, PI, lambda.sel = 'lambda.min', intercept = TRUE, eps = 1e-3, max.iter = 1000, ...) {

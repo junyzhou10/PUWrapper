@@ -44,5 +44,5 @@ This is the PU learning method proposed in the paper: Ward, G., Hastie, T., Barr
 \examples{
 set.seed(123)
 res = PU_EMLasso(sample_dat$Z, sample_dat$X, sample_dat$PI, alpha = 1)
-plot(res$Est.Pr, sample_dat$true.prob)
+# plot(res$Est.Pr, sample_dat$true.prob)
 }
